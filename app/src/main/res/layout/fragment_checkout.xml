@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88FFF7"
+    tools:context=".CheckoutFragment">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:src="@drawable/logo_mycovidtest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient_background1"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="200dp">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Form Pemesanan"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvUsernameCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_16dp"
+                android:backgroundTint="@color/readonly_color"
+                android:editable="false"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvEmailCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_16dp"
+                android:backgroundTint="@color/readonly_color"
+                android:editable="false"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"></EditText>
+
+            <TextView
+                android:id="@+id/tvNamaRSCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Nama RS" />
+
+            <EditText
+                android:id="@+id/etNamaRS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_16dp"
+                android:backgroundTint="@color/readonly_color"
+                android:editable="false"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvJumlahBookingCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Jumlah Book" />
+
+            <EditText
+                android:id="@+id/etJumlahBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_16dp"
+                android:backgroundTint="@color/readonly_color"
+                android:editable="false"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvKategoriTestCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Jenis Test" />
+
+            <EditText
+                android:id="@+id/etKategoriTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_16dp"
+                android:backgroundTint="@color/readonly_color"
+                android:editable="false"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"></EditText>
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Total Pembayaran" />
+
+            <EditText
+                android:id="@+id/etTotalPembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle_16dp"
+                android:backgroundTint="@color/readonly_color"
+                android:editable="false"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"></EditText>
+
+            <Button
+                android:id="@+id/btConfirmCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="64dp"
+                android:text="Confirm Checkout" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
